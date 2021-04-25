@@ -8,7 +8,26 @@ ChangelogAutomation.action is a GitHub action that uses [ChangelogAutomation][ch
 Usage
 -----
 
-TBD.
+Add the following to your `.github/workflows/<workflow>.yml`:
+
+```yaml
+jobs:
+  <job>:
+    steps:
+      - name: Test Markdown
+        uses: ForNeVeR/ChangelogAutomation.action@v1
+        with:
+          input: ./smth/CHANGELOG.md
+          output: ./changelog-section.md
+```
+
+This will read the latest version section of your `CHANGELOG.md` file and save it to the `changelog-section.md` file.
+
+Available input parameters are:
+
+- `input` (`./CHANGELOG.md` by default): the input changelog file
+- `format` (`Markdown` by default): output file format; either `Markdown` or `PlainText`
+- `output`: the output file where the section content will be written
 
 Development
 -----------
@@ -25,9 +44,11 @@ Documentation
 - [Changelog][changelog]
 - [Maintainership][maintainership]
 - [License][license] (MIT)
+- see also [the ChangelogAutomation documentation][changelogautomation]
 
 [andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-zero-
 [changelog]: ./CHANGELOG.md
+[changelogautomation]: https://github.com/ForNeVeR/ChangelogAutomation
 [github-docs]: https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action#commit-tag-and-push-your-action-to-github
 [keep-a-changelog]: http://keepachangelog.com/
 [license]: ./LICENSE.md
