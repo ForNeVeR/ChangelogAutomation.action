@@ -1,0 +1,25 @@
+{
+  "name": "changelogautomation.action",
+  "version": "1.0.0",
+  "description": "GitHub action to process changelog files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ForNeVeR/ChangelogAutomation.action.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "changelog",
+    "dotnet"
+  ],
+  "author": "Friedrich von Never",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ForNeVeR/ChangelogAutomation.action/issues"
+  },
+  "homepage": "https://github.com/ForNeVeR/ChangelogAutomation.action#readme"
+}
