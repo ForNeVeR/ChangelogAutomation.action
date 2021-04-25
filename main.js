@@ -29,18 +29,20 @@ if (!packageInfo) throw `Couldn't determine package info for platform ${process.
 
 const url = `https://github.com/ForNeVeR/ChangelogAutomation/releases/download/v${version}/ChangelogAutomation-v${version}.${packageInfo.dotnetOs}-${architecture}.zip`;
 
-const archivePath = await toolCache.downloadTool(url);
-await verifyHash(packageInfo.sha256, archivePath);
-const extractedToolDirectoryPath = await toolCache.extractZip(archivePath);
+async function run() {
+    const archivePath = await toolCache.downloadTool(url);
+    await verifyHash(packageInfo.sha256, archivePath);
+    const extractedToolDirectoryPath = await toolCache.extractZip(archivePath);
 
-const executablePath = path.join(extractedToolDirectoryPath, packageInfo.executableFileName);
-await exec.exec(executablePath, [
-    core.getInput('input'),
-    '--outputFilePath',
-    core.getInput('output'),
-    '--contentType',
-    core.getInput('format')
-]);
+    const executablePath = path.join(extractedToolDirectoryPath, packageInfo.executableFileName);
+    await exec.exec(executablePath, [
+        core.getInput('input'),
+        '--outputFilePath',
+        core.getInput('output'),
+        '--contentType',
+        core.getInput('format')
+    ]);
+}
 
 async function verifyHash(expectedSha256, path) {
     const fileData = await readFileAsync(path);
@@ -61,3 +63,5 @@ function readFileAsync(path) {
         })
     });
 }
+
+run();
