@@ -28,12 +28,12 @@ jobs:
       - name: Test Markdown
         uses: ./
         with:
-          path: ./test-data/CHANGELOG.md
+          input: ./test-data/CHANGELOG.md
           output: ./test-results/section.md
       - name: Test plain text
         uses: ./
         with:
-          path: ./test-data/CHANGELOG.md
+          input: ./test-data/CHANGELOG.md
           format: PlainText
           output: ./test-results/section.txt
 
