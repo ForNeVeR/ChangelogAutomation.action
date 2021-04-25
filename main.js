@@ -5,22 +5,22 @@ const fs = require('fs');
 const path = require('path');
 const toolCache = require('@actions/tool-cache');
 
-const version = '1.0.0';
+const version = '1.0.1';
 const architecture = 'x64';
 const packageData = {
     darwin: {
         dotnetOs: 'osx',
-        sha256: '30B8AE8551DA3DA43CACBD9227575C8AA6706EB3C7276335C4104EF8FE53DC4C',
+        sha256: '1ECB94FA70B64BDFDD96503F688B6CEAE62C411A64D718A77A375A3641D5482E',
         executableFileName: 'ChangelogAutomation'
     },
     linux: {
         dotnetOs: 'linux',
-        sha256: 'D49DDC050E4B9BE46A94454270BA1D28853C244AA5D54C04758E78EBEF6F35E4',
+        sha256: '6EAB077D02CD67AFD256DCFB200748FF487F43435FC5DBE4D17E99C0C21E63EA',
         executableFileName: 'ChangelogAutomation'
     },
     'win32': {
         dotnetOs: 'win',
-        sha256: '610D411FB5422DBA4579E96BF7C970981AFAEA17DCEDCAE4DC7C636B38A25CCD',
+        sha256: 'A36C2ED8126A8835320026A45704CD05F915E7987DB0752C1C4847EBDB65EC0F',
         executableFileName: 'ChangelogAutomation.exe'
     }
 };

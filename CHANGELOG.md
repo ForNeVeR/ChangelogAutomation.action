@@ -7,6 +7,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 [Unreleased]
 ------------
-This is the initial release of the action. It is based on ChangelogAutomation v1.0.0.
+This is the initial release of the action. It is based on ChangelogAutomation v1.0.1.
 
 [Unreleased]: https://github.com/ForNeVeR/ChangelogAutomation.action/tree/HEAD
