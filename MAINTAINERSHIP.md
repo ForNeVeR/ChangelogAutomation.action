@@ -15,7 +15,9 @@ To release a new version:
 8. Merge the changes via a pull request.
 9. Push a tag named `v<VERSION>` to GitHub.
 10. Create a new [release][releases] on GitHub.
-11. Make sure to also update the current rolling major release (say, `v1`) to the new version.
+    - Release title should be "ChangelogAutomation.action v<VERSION>"
+    - Release notes could be copy-pasted from the `CHANGELOG.md` file
+11. Make sure to also update the current rolling major release tag (say, `v1`) to the new version.
 
 [semver]: https://semver.org/spec/v2.0.0.html
 [releases]: https://github.com/ForNeVeR/ChangelogAutomation.action/releases
