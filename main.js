@@ -30,18 +30,28 @@ if (!packageInfo) throw `Couldn't determine package info for platform ${process.
 const url = `https://github.com/ForNeVeR/ChangelogAutomation/releases/download/v${version}/ChangelogAutomation-v${version}.${packageInfo.dotnetOs}-${architecture}.zip`;
 
 async function run() {
-    const archivePath = await toolCache.downloadTool(url);
-    await verifyHash(packageInfo.sha256, archivePath);
-    const extractedToolDirectoryPath = await toolCache.extractZip(archivePath);
+    try {
+        core.info(`Downloading tool from ${url}`);
+        const archivePath = await toolCache.downloadTool(url);
+        core.info(`Verifying the hash of the tool downloaded to ${archivePath}`);
+        await verifyHash(packageInfo.sha256, archivePath);
+        core.info(`Extracting the tool archive from ${archivePath}`);
+        const extractedToolDirectoryPath = await toolCache.extractZip(archivePath);
+        core.info(`Extracted tool location: ${extractedToolDirectoryPath}`);
 
-    const executablePath = path.join(extractedToolDirectoryPath, packageInfo.executableFileName);
-    await exec.exec(executablePath, [
-        core.getInput('input'),
-        '--outputFilePath',
-        core.getInput('output'),
-        '--contentType',
-        core.getInput('format')
-    ]);
+        const executablePath = path.join(extractedToolDirectoryPath, packageInfo.executableFileName);
+        core.info(`Extracted tool file path: ${executablePath}`);
+
+        await exec.exec(executablePath, [
+            core.getInput('input'),
+            '--outputFilePath',
+            core.getInput('output'),
+            '--contentType',
+            core.getInput('format')
+        ]);
+    } catch (e) {
+        core.setFailed(`Action failed with error ${e}`);
+    }
 }
 
 async function verifyHash(expectedSha256, path) {
