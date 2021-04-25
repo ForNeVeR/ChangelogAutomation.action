@@ -1,0 +1,42 @@
+name: Main
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 * * 6'
+
+jobs:
+  main:
+    strategy:
+      matrix:
+        image:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+      fail-fast: false
+    runs-on: ${{ matrix.image }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Test Markdown
+        uses: ./
+        with:
+          path: ./test-data/CHANGELOG.md
+          output: ./test-results/section.md
+      - name: Test plain text
+        uses: ./
+        with:
+          path: ./test-data/CHANGELOG.md
+          format: PlainText
+          output: ./test-results/section.txt
+
+      - name: Verify test results
+        shell: pwsh
+        run: ./scripts/verify.ps1
