@@ -18,7 +18,7 @@ const packageData = {
         sha256: '6EAB077D02CD67AFD256DCFB200748FF487F43435FC5DBE4D17E99C0C21E63EA',
         executableFileName: 'ChangelogAutomation'
     },
-    'win32': {
+    win32: {
         dotnetOs: 'win',
         sha256: 'A36C2ED8126A8835320026A45704CD05F915E7987DB0752C1C4847EBDB65EC0F',
         executableFileName: 'ChangelogAutomation.exe'
