@@ -1,4 +1,4 @@
-ChangelogAutomation.action [![Status Zero][status-zero]][andivionian-status-classifier]
+ChangelogAutomation.action [![Status Aquana][status-aquana]][andivionian-status-classifier]
 ==========================
 
 When preparing a software release, a common task is to parse [the changelog file][keep-a-changelog], and extract the latest changes section from it. For certain purposes, Markdown format is acceptable, but in some cases a text format is also useful.
@@ -54,7 +54,7 @@ Documentation
 - [License][license] (MIT)
 - see also [the ChangelogAutomation documentation][changelogautomation]
 
-[andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-zero-
+[andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-aquana-
 [changelog]: ./CHANGELOG.md
 [changelogautomation]: https://github.com/ForNeVeR/ChangelogAutomation
 [github-docs]: https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action#commit-tag-and-push-your-action-to-github
@@ -62,4 +62,4 @@ Documentation
 [license]: ./LICENSE.md
 [maintainership]: ./MAINTAINERSHIP.md
 
-[status-zero]: https://img.shields.io/badge/status-zero-lightgrey.svg
+[status-aquana]: https://img.shields.io/badge/status-aquana-yellowgreen.svg
