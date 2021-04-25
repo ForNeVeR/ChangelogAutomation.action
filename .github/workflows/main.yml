@@ -25,6 +25,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Create output directory # TODO: Remove after https://github.com/ForNeVeR/ChangelogAutomation/issues/10
+        shell: pwsh
+        run: New-Item -Type Directory ./test-results
+
       - name: Test Markdown
         uses: ./
         with:
