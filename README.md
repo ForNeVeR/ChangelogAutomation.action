@@ -32,6 +32,14 @@ Available input parameters are:
 Development
 -----------
 
+Node.js v12.0+ and NPM 6.0+ are required to work on this project.
+
+To download the dependencies, run the following shell command:
+
+```console
+$ npm install
+```
+
 To build the project distribution (which is then pushed to the repository, [as recommended by GitHub][github-docs]), run the following shell command:
 
 ```console
