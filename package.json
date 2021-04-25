@@ -2,6 +2,9 @@
   "name": "changelogautomation.action",
   "version": "1.0.0",
   "description": "GitHub action to process changelog files.",
+  "scripts": {
+    "build": "ncc build main.js --license licenses.txt"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ForNeVeR/ChangelogAutomation.action.git"
@@ -22,5 +25,8 @@
     "@actions/core": "^1.2.7",
     "@actions/exec": "^1.0.4",
     "@actions/tool-cache": "^1.6.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.3"
   }
 }

@@ -10,6 +10,15 @@ Usage
 
 TBD.
 
+Development
+-----------
+
+To build the project distribution (which is then pushed to the repository, [as recommended by GitHub][github-docs]), run the following shell command:
+
+```console
+$ npm run build
+```
+
 Documentation
 -------------
 
@@ -19,6 +28,7 @@ Documentation
 
 [andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-zero-
 [changelog]: ./CHANGELOG.md
+[github-docs]: https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action#commit-tag-and-push-your-action-to-github
 [keep-a-changelog]: http://keepachangelog.com/
 [license]: ./LICENSE.md
 [maintainership]: ./MAINTAINERSHIP.md
