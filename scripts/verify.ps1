@@ -8,13 +8,14 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 function Assert-Equal($expected, $actual, $label) {
-    if ($expected.Replace("`r`n", "`n") -ne $actual.Replace("`r`n", "`n")) {
+    if ($expected.TrimEnd().Replace("`r`n", "`n") -ne $actual.TrimEnd().Replace("`r`n", "`n")) {
         throw "$label not equal to expected. Expected: @'`n$expected`n'@`n`nActual: @'`n$actual`n'@"
     }
 }
 
 $expectedMd = @'
 ### Added
+
 - Markdown-to-Markdown transformation
 '@
 
