@@ -2,10 +2,6 @@
   "name": "changelogautomation.action",
   "version": "1.0.0",
   "description": "GitHub action to process changelog files.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ForNeVeR/ChangelogAutomation.action.git"
@@ -21,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/ForNeVeR/ChangelogAutomation.action/issues"
   },
-  "homepage": "https://github.com/ForNeVeR/ChangelogAutomation.action#readme"
+  "homepage": "https://github.com/ForNeVeR/ChangelogAutomation.action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/exec": "^1.0.4",
+    "@actions/tool-cache": "^1.6.1"
+  }
 }
