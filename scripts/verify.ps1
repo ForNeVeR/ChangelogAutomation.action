@@ -7,7 +7,7 @@ param (
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
-function assertEqual($expected, $actual, $label) {
+function Assert-Equal($expected, $actual, $label) {
     if ($expected.Replace("`r`n", "`n") -ne $actual.Replace("`r`n", "`n")) {
         throw "$label not equal to expected. Expected: @'`n$expected`n'@`n`nActual: @'`n$actual`n'@"
     }
@@ -27,5 +27,5 @@ $expectedTxt = @'
 $actualMd = Get-Content -Raw $MarkdownResult
 $actualTxt = Get-Content -Raw $PlainTextResult
 
-assertEqual($expectedMd, $actualMd, "Markdown")
-assertEqual($expectedTxt, $actualTxt, "Plain text")
+Assert-Equal $expectedMd $actualMd "Markdown"
+Assert-Equal $expectedTxt $actualTxt "Plain text"
