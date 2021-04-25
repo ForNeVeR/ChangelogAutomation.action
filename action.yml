@@ -16,3 +16,6 @@ runs:
   using: 'node12'
   main: 'dist/index.js'
   post-if: 'success()'
+branding:
+  icon: file-text
+  color: orange
