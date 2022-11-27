@@ -9,7 +9,7 @@ To release a new version:
 2. Update the copyright year in the `LICENSE.md` file, if required.
 3. Choose the new version according to [Semantic Versioning][semver]. It should consist of three numbers (e.g. `1.0.0`).
 4. Update the `version` field in the `package.json` file.
-5. Update the contents of the `version` and `packageData` variables in the `main.js` file, if the main tool version should be updated.
+5. Update the contents of the `version` and `packageData` variables in the `main.js` file, if the ChangelogAutomation dotnet tool version should be updated.
 6. Run `npm ci && npm run build`.
 7. Make sure there's a properly formed version entry in the `CHANGELOG.md` file.
 8. Merge the changes via a pull request.
