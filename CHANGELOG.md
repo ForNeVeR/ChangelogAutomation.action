@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [Unreleased] (1.0.1)
 ### Changed
 - The action is now based on Node.js 16, [as recommended by GitHub](https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/).
+- Update all the project dependencies.
 
 ## [1.0.0] - 2021-04-25
 This is the initial release of the action. It is based on ChangelogAutomation v1.0.1.
