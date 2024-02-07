@@ -32,7 +32,7 @@ Available input parameters are:
 Development
 -----------
 
-Node.js v16.0+ and NPM 8.0+ are required to work on this project.
+Node.js v20.0+ and NPM 10.0+ are required to work on this project.
 
 To download the dependencies, run the following shell command:
 
