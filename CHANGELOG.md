@@ -19,4 +19,5 @@ This is the initial release of the action. It is based on ChangelogAutomation v1
 
 [1.0.0]: https://github.com/ForNeVeR/ChangelogAutomation.action/releases/tag/v1.0.0
 [1.0.1]: https://github.com/ForNeVeR/ChangelogAutomation.action/compare/v1.0.0...v1.0.1
-[Unreleased]: https://github.com/ForNeVeR/ChangelogAutomation.action/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/ForNeVeR/ChangelogAutomation.action/compare/v1.0.1...v1.0.2
+[Unreleased]: https://github.com/ForNeVeR/ChangelogAutomation.action/compare/v1.0.2...HEAD
