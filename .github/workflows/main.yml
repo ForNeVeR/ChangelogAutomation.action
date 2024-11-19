@@ -18,6 +18,7 @@ jobs:
         image:
           - macos-latest
           - ubuntu-latest
+          - ubuntu-24.04
           - windows-latest
       fail-fast: false
     runs-on: ${{ matrix.image }}
