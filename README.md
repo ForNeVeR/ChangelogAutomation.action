@@ -1,4 +1,4 @@
-ChangelogAutomation.action [![Status Aquana][status-aquana]][andivionian-status-classifier]
+ChangelogAutomation.action [![Status Terrid][status-terrid]][andivionian-status-classifier]
 ==========================
 
 When preparing a software release, a common task is to parse [the changelog file][keep-a-changelog], and extract the latest changes section from it. For certain purposes, Markdown format is acceptable, but in some cases a text format is also useful.
@@ -54,12 +54,11 @@ Documentation
 - [License][license] (MIT)
 - see also [the ChangelogAutomation documentation][changelogautomation]
 
-[andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-aquana-
+[andivionian-status-classifier]: https://andivionian.fornever.me/v1/#status-terrid-
 [changelog]: ./CHANGELOG.md
 [changelogautomation]: https://github.com/ForNeVeR/ChangelogAutomation
 [github-docs]: https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action#commit-tag-and-push-your-action-to-github
 [keep-a-changelog]: http://keepachangelog.com/
 [license]: ./LICENSE.md
 [maintainership]: ./MAINTAINERSHIP.md
-
-[status-aquana]: https://img.shields.io/badge/status-aquana-yellowgreen.svg
+[status-terrid]: https://img.shields.io/badge/status-terrid-green.svg
