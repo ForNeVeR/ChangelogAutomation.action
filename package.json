@@ -1,6 +1,6 @@
 {
   "name": "changelogautomation.action",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "GitHub action to process changelog files.",
   "scripts": {
     "build": "ncc build main.js --license licenses.txt"

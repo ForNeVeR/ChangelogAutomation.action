@@ -15,7 +15,7 @@ jobs:
   <job>:
     steps:
       - name: Test Markdown
-        uses: ForNeVeR/ChangelogAutomation.action@v1
+        uses: ForNeVeR/ChangelogAutomation.action@v2
         with:
           input: ./smth/CHANGELOG.md
           output: ./changelog-section.md
