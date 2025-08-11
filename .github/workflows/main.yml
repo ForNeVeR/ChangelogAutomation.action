@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create output directory # TODO: Remove after https://github.com/ForNeVeR/ChangelogAutomation/issues/10
         shell: pwsh
