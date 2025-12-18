@@ -23,7 +23,7 @@
   "homepage": "https://github.com/ForNeVeR/ChangelogAutomation.action#readme",
   "dependencies": {
     "@actions/core": "^2.0.0",
-    "@actions/exec": "^1.1.1",
+    "@actions/exec": "^2.0.0",
     "@actions/tool-cache": "^2.0.1"
   },
   "devDependencies": {
