@@ -4,10 +4,10 @@ on:
   pull_request:
     branches:
       - master
-      - renovate/**
   push:
     branches:
       - master
+      - renovate/**
   schedule:
     - cron: '0 0 * * 6'
   workflow_dispatch:
